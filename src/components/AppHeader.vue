@@ -71,8 +71,7 @@ export default{
 @use "../styles/partials/variables" as*;
 .logo
 img{
-        width: 50%;
-        margin-right: 30px; 
+        width: 70%;
     }
 
 ul{
@@ -81,20 +80,20 @@ ul{
 
 }
     li{
-        margin: 0px 10px;
-        padding-bottom: 20px;
         font-size: .8rem;
+        padding: 45px 0;
+        text-align: center;
 
-        &:hover{
-            border-bottom: 4px solid $primary-color;
-        }
     }
         a{
             text-decoration: none;
             color: black;
+            padding: 40px 0px 40px 0;
+            margin-right: 30px;
 
             &:hover{
                 color: $primary-color;
+                border-bottom: 5px solid $primary-color;
             }
         }
 
