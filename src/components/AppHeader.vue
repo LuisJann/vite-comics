@@ -81,12 +81,12 @@ ul{
 
 }
     li{
-        margin: 10px 10px;
+        margin: 0px 10px;
         padding-bottom: 20px;
         font-size: .8rem;
 
         &:hover{
-            border-bottom: 2px solid $primary-color;
+            border-bottom: 4px solid $primary-color;
         }
     }
         a{
