@@ -60,6 +60,12 @@ export default{
             justify-content: space-around;
             align-items: center;
             margin: 0 20px;
+            cursor: pointer;
+            transition: .2s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
 
             img{
                 width: 30%;
