@@ -58,7 +58,7 @@ export default{
             </div>
             <nav class="menu">
                 <ul>
-                    <li v-for="(item, index) in productList">
+                    <li v-for="(item, index) in productList" :key="index">
                         <a href="{{item.href}}">{{item.title}}</a>
                     </li>
                 </ul>
@@ -71,31 +71,33 @@ export default{
 @use "../styles/partials/variables" as*;
 .logo
 img{
-        width: 70%;
+    width: 70%;
     }
 
 ul{
     display: flex;
     list-style-type: none;
 
-}
     li{
         font-size: .8rem;
         padding: 45px 0;
         text-align: center;
-
-    }
+        font-weight: bold;
+        
         a{
             text-decoration: none;
             color: black;
             padding: 40px 0px 40px 0;
             margin-right: 30px;
+            transition: .2s;
 
             &:hover{
                 color: $primary-color;
                 border-bottom: 5px solid $primary-color;
             }
         }
+    }
+}
 
 .wrapper{
     justify-content: space-between;
