@@ -61,13 +61,19 @@ export default{
         background-image: url(../assets/img/dc-logo-bg.png);
         background-repeat: no-repeat;
         background-position: right;
-        padding: 20px;
+        padding: 20px 0;
         justify-content: flex-start;
         div{
+            
             ul{
                 list-style-type: none;
                 color:white;
                 margin: 20px 20px 20px 0;
+
+                h2{
+                    margin-bottom: 10px;
+                    margin-right: 10px;
+                }
 
                 li{
                     color: #959595;

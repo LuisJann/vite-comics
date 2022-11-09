@@ -38,7 +38,7 @@ export default{
 <template>
     <div class="container">
         <div class="wrapper">
-            <div class="card" v-for="(item, index) in iconsList">
+            <div class="card" v-for="(item, index) in iconsList" :key="index">
                 <img :src="getImg(`../assets/img/${item.img}`)" alt="">
                 <p>{{item.title}}</p>
             </div>

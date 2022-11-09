@@ -1,24 +1,39 @@
 <script>
 export default{
-    name:"ContentSection"
+    name:"ContentSection",
+    props:{
+        img: String,
+        text: String,
+        price: String,
+    },
 }
 </script>
 
 <template>
-<div class="container">
-    <div class="wrapper">
-        <h1>Content goes here</h1>
+    <div class="card">
+        <img :src="img" alt="">
+        <h5>{{text}}</h5>
+        <p>{{price}}</p>
     </div>
-</div>
 </template>
 
 <style lang="scss" scoped>
-.container{
-    background-color: #1c1c1c;
-}
-    .wrapper
-        h1{
-            padding: 40px 0;
-            color: white;
+        .card{
+            width: calc(100% / 6 - 20px);
+            margin: 10px;
+            cursor: pointer;
+            transition: .2s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+            
+            h5{
+                color: white;
+            }
+            p{
+                color: #959595;
+                font-size: .7rem;
+            }
         }
 </style>

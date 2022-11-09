@@ -69,6 +69,10 @@ export default{
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as*;
+
+.container{
+
+}
 .logo
 img{
     width: 70%;
