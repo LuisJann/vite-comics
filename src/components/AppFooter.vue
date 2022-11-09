@@ -9,7 +9,7 @@ export default{
         <div class="wrapper">
             <div>
                 <ul>
-                    <h3>DC COMICS</h3>
+                    <h2>DC COMICS</h2>
                     <li>Characters</li>
                     <li>Comics</li>
                     <li>Movies</li>
@@ -19,14 +19,14 @@ export default{
                     <li>News</li>
                 </ul>
                 <ul>
-                    <h3>SHOP</h3>
+                    <h2>SHOP</h2>
                     <li>Shop DC</li>
                     <li>Shop DC Collectibles</li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <h3>DC</h3>
+                    <h2>DC</h2>
                     <li>prova</li>
                     <li>prova</li>
                     <li>prova</li>
@@ -42,7 +42,7 @@ export default{
             </div>
             <div>
                 <ul>
-                    <h3>SITES</h3>
+                    <h2>SITES</h2>
                     <li>prova</li>
                     <li>prova</li>
                     <li>prova</li>
@@ -60,17 +60,18 @@ export default{
     .wrapper{
         background-image: url(../assets/img/dc-logo-bg.png);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right;
         padding: 20px;
+        justify-content: flex-start;
         div{
             ul{
                 list-style-type: none;
                 color:white;
-                margin: 20px;
+                margin: 20px 20px 20px 0;
 
                 li{
                     color: #959595;
-                    font-size: .7rem;
+                    font-size: .8rem;
                     cursor: pointer;
                     transition: .2s;
 
